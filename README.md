@@ -39,5 +39,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_workspace"></a> [workspace](#output\_workspace) | n/a |
+| <a name="output_workspace"></a> [workspace](#output\_workspace) | Outputs the values returned by the tfe\_workspace resource. https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/workspace |
 <!-- END_TF_DOCS -->
