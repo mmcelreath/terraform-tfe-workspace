@@ -9,7 +9,7 @@ resource "tfe_workspace" "workspace" {
   execution_mode                = var.execution_mode
 
   dynamic "vcs_repo" {
-    for_each = lookup(var.vcs_repo, "identifier") == null ? [] : [var.vcs_repo]
+    for_each = (var.vcs_repo == null) ? [] : [var.vcs_repo]
     content {
       identifier         = lookup(var.vcs_repo, "identifier", null)
       branch             = lookup(var.vcs_repo, "branch", null)
